@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Мета для нормального и отзычивого отображения  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS стандартный фреймворковый  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>NEA - книги каждому и каждой!</title>
+</head>
+<body>
+<!-- Шапка  -->
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark " style="background-color: #204d74;">
+    <!-- Лого -->
+    <a class="navbar-brand" href="#">
+        <img src="/images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Книги каждому и каждой!
+    </a>
+    <!-- Список ссылко на страницы -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- Жанры -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">Жанры</a>
+            </li>
+            <!-- Выпадающий "Еще" -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Еще
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">История покупок</a>
+                    <a class="dropdown-item" href="#">О сайте</a>
+                </div>
+            </li>
+            <!-- Выпадающий "Мои книги" -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Мои книги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Корзина</a>
+                    <a class="dropdown-item" href="#">Отложенное</a>
+                    <a class="dropdown-item" href="#">Рекомендации</a>
+                </div>
+            </li>
+            <!-- Кнопка войти с модальным окном-->
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" style="background-color: #204d74"  data-toggle="modal" data-target="#exampleModalLong">
+                    Войти
+                </button>
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Вход</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Адрес электронной почты</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Пароль</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="btn btn-primary">Войти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- Форма поиска с кнопкой "Поиск"-->
+        <form class="form-inline my-2 my-lg-0" >
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск книги" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" style="color:#f8f8f8" style="border-color:#faf2cc" type="submit">Поиск</button>
+        </form>
+    </div>
+</nav>
+
+
+<!-- Херня со всеми скриптами-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
